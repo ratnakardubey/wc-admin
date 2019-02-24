@@ -49,7 +49,7 @@ const MyDateRange =  withState( {
 					error={ afterError } 
 					onUpdate={ onDatePickerUpdate }
 					dateFormat={ dateFormat }
-					invalidDays="none"
+					isInvalidDate={ date => moment( date ).day() === 1 }
 				/>
 			</Section>
 		</div>
