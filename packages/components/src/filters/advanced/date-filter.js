@@ -128,8 +128,7 @@ class DateFilter extends Component {
 	}
 
 	isInvalidDate( dateString ) {
-		const today = moment();
-		return today.isBefore( moment( dateString ), 'day' );
+		return moment().isBefore( moment( dateString ), 'day' );
 	}
 
 	getFilterInputs() {
